@@ -1,0 +1,82 @@
+body {
+    background: #f9f9f9;    
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+header {
+    background-image: url("images/hero.jpg");
+    background-size: 100%;
+    background-position: center;
+    height: 400px;
+    padding: 20px;
+}
+
+/* Navigation System */
+ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+}
+ul.nav_pane {
+    background-color: #00031d;
+    height: 60px;
+}
+li {
+    margin-top: 22px;
+    margin-right: 20px;
+    padding-right: 15px;
+    &:hover {font-weight: 20;}
+}
+a {
+    text-decoration: none;
+    
+}
+
+
+
+/* Footer Section */
+footer {
+    background: #fff;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+}
+.socials {
+    justify-content: center;
+}
+.icon a {
+    display: inline-block;
+    position: relative;
+    text-indent: -99999999999999999px;
+    padding: 0 12px;
+    height: 45px;
+}
+.icon.FB {
+    background-image: url("images/fb.png");
+    background-size: 45px;
+    background-repeat: no-repeat;
+}
+.icon.Yelp {
+    background-image: url("images/yelp.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+}
+.copyright {
+    color: rgb(59, 59, 59);
+    font-size: 15px;
+    text-align: center;
+    margin: 0 auto;
+    width: min(1200px, 72%);
+    line-height: 22px;
+    padding-bottom: 20px;
+}
