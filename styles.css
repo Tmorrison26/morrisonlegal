@@ -8,11 +8,24 @@ body {
 
 /* Header Section */
 header {
-    background-image: url("images/hero.jpg");
-    background-size: 100%;
+    height: 275px;
+    padding: 0;
+}
+.law_logo {
+    background-image: url("images/logo.png");
+    background-size: min(600px, 55%);
     background-position: center;
-    height: 400px;
-    padding: 20px;
+    background-repeat: no-repeat;
+    position: relative;
+    text-indent: -99999999999999999px;
+    height: 250px;
+}
+.title {
+    height: 50px;
+    text-align: center;
+    margin-top: min(-25px);
+    font-weight: 400;
+    font-size: 25px;
 }
 
 /* Navigation System */
@@ -23,16 +36,17 @@ ul {
     list-style-type: none;
     text-align: center;
     justify-content: center;
-    font-size: 15px;
+    font-size: 16px;
 }
 ul.nav_pane {
-    background-color: #00031d;
-    height: 60px;
+    background-color: #000429;
+    height: 62.5px;
 }
-li {
+.nav-system {
     margin-top: 22px;
     margin-right: 20px;
-    padding-right: 15px;
+    padding-right: 16px;
+    font-weight: 250;
     &:hover {font-weight: 20;}
 }
 a {
@@ -40,16 +54,57 @@ a {
     
 }
 
-
-
+/* Body Section */ 
+.feature-box {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.images {
+    background-color: #000429;
+    width: 640px;
+    padding: 8px;
+}
+.special {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: left;
+    height: 75px;
+    margin-left: 29%;
+    font-size: 17px;
+}
+.feature-box.text {
+    flex-direction: column;
+    margin-left: 12%;
+    width: min(1200px, 75%);
+    line-height: 25px;
+}
+.feature-box.label {
+    padding-top: 40px;
+    font-size: 25px;
+    font-weight: 300;
+}
+.feature-box.info_ticket {
+    margin-left: 36.5%;
+    width: 60vh;
+    line-height: 25px;
+}
+h1 {
+    font-size: 17px;
+    line-height: 35px;
+    font-weight: 500;
+}
 /* Footer Section */
 footer {
-    background: #fff;
+    background: #f9f9f9;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100px;
+    min-height: 100px;
+    height: auto;
 }
 .socials {
     justify-content: center;
@@ -58,7 +113,7 @@ footer {
     display: inline-block;
     position: relative;
     text-indent: -99999999999999999px;
-    padding: 0 12px;
+    padding: 0 28px;
     height: 45px;
 }
 .icon.FB {
