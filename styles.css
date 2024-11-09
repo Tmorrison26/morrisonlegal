@@ -4,6 +4,7 @@ body {
     font-size: 15px;
     margin: 0;
     padding: 0;
+    letter-spacing: .5px;
 }
 
 /* Header Section */
@@ -51,7 +52,6 @@ ul.nav_pane {
 }
 a {
     text-decoration: none;
-    
 }
 
 /* Body Section */ 
@@ -61,6 +61,38 @@ a {
     flex-direction: row;
     justify-content: center;
 }
+
+.btn1, .btn2 {
+    position: relative;
+    border: 1px solid black;
+    color: black;
+    font-weight: 450;
+    font-size: 15px;
+    border-radius: 35px;
+    padding: 20px 35px;
+    transition: color 0.15s linear;
+    overflow: hidden;
+}
+/* Transition for button */
+.btn1::before, .btn2::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: -50px;
+    top: 0;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid black;
+    transform: translateX(-100%);
+    transition: transform .15s linear;
+    z-index: -1;
+}
+.btn1:hover::before, .btn2:hover::before{
+    transform: translateX(0);
+}
+.btn1:hover, .btn2:hover {
+    color: white;
+}
+
 .images {
     background-color: #000429;
     width: 640px;
@@ -71,6 +103,7 @@ a {
     flex-direction: column;
     position: relative;
     text-align: left;
+    line-height: 20px;
     height: 75px;
     margin-left: 29%;
     font-size: 17px;
@@ -150,6 +183,43 @@ h3 {
     flex-direction: column;
 }
 
+/* Contact Form */
+form {
+    margin-top: 50px;
+}
+.form-control {
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+input {
+    height: 45px;
+}
+.form-control.file {
+    display: none;
+}
+.form-control.attach {
+    padding-top: -15px;
+    height: 15px;
+    width: 100%;
+    font-size: 15px;
+    color: black;
+    border: none;
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+button {
+    background: transparent;
+    cursor: pointer;
+}
+
 /* Footer Section */
 footer {
     background: #f9f9f9;
@@ -158,10 +228,14 @@ footer {
     flex-direction: column;
     justify-content: center;
     min-height: 100px;
+    margin-left: -2px;
     height: auto;
 }
 .socials {
     justify-content: center;
+}
+.icon_link {
+    margin-left: -25px;
 }
 .icon a {
     display: inline-block;
