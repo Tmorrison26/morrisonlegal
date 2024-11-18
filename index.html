@@ -9,6 +9,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!--Swiper Import-->
+        <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
     </head>
     <body>
         <!--Navigation Pane-->
@@ -43,7 +45,9 @@
             <li>Client Focused Objectives</li>
         </section>
         <section class="feature-box">
-            <a href="mailto:larry@morrisonlegal.com?subject=Schedule a Consultation" class="btn1">SCHEDULE A CONSULTATION</a>
+            <a href="mailto:larry@morrisonlegal.com?subject=Schedule a Consultation" class="btn1">
+                SCHEDULE A CONSULTATION
+            </a>
         </section>
         <section class="feature-box text">
             <h1>Experienced Legal Guidance</h1>
@@ -235,12 +239,60 @@
 
         <!--Reviews Section-->
         <section class="feature-box reviews">
-            <div style="font-family: 'Sacramento', sans-serif; color: white; font-size: 60px; font-weight: 300; margin-top: 4%;">
+            <section style="font-family: 'Sacramento', sans-serif; color: white; font-size: 60px; font-weight: 300; margin-top: 5%;">
                 Reviews from Clients
-            </div>
-            <div></div>
-            <div></div>
+            </section>
+            <a href="https://facebook.com/110209167090165/reviews" style="text-decoration: none; color: white;">
+                <section class="percent">
+                    <section class="review_num logo" style="margin-top: 25px;">
+                        <img src="images/fb.png" alt="" class="review_num logo">
+                    </section>
+                    <section class="review_num" style="padding-left: 35px;">
+                        <div>Morrison Legal, LLC</div>
+                        <div><strong>100% recommend</strong></div>
+                        <div style="font-size: 15px;">Based on the opinion of 3 people</div>
+                    </section>
+                </section>
+            </a>
+            <section class="container">
+                <div class="slide-container swiper">
+                    <div class="slide-content">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay">
+
+                                    </span>
+
+                                    <div class="card-image">
+                                        <img src="images/prof1.jpg" alt="" class="card-img">
+                                    </div>
+
+                                    <div class="card-content">
+                                        <h2 class="name">
+                                            Nilah Simmons
+                                        </h2>
+                                        <p class="description">
+                                            Morrison Legal was instrumental in insuring my mothers home, income and support. She can stay home for the remainder of her life because of the legal support provided by Morrison legal LLC. She has 24 hour constant care and is very happy along with her supporting family. Thank you Morrison Legal LLC.
+                                        </p>
+
+                                        <button class="review-button">Read Full Review</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
         </section>
+
+        <!-- JS -->
+        <script src="swiper/swiper-bundle.min.js"></script>
+        <script src="java/script.js"></script>
         
         <!--Contact Section-->
         <section class="feature-box label" style="font-size: 30px;">
