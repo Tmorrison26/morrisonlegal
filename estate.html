@@ -11,6 +11,17 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init({
+                    publicKey: "cqiEJ2nedX1pOfi9i",
+                });
+            })();
+        </script>
     </head>
     <body>
         <!--Navigation Pane-->
@@ -215,9 +226,35 @@
                 </div>
             </div>
         </section>
+        
+        <!--Java Import-->
         <script src="java/app.js"></script>
-
+        <script src="java/script.js"></script>
+        
         <!--Contact Section-->
+        <section class="feature-box label" style="font-size: 30px;">
+            <hr width="30%" size="1" color="black" style="margin-left: 12%; justify-content: left; height: 2%; margin-top: auto;">
+            Contact Us
+            <hr width="30%" size="1" color="black" style="margin-right: 12%; justify-content: right; height: 2%; margin-top: auto;">
+        </section>
+        <section class="feature-box">
+            <div style="text-align: center; line-height: 25px; font-weight: 300; font-size: 17px;">
+                <p>
+                    NEED MORE INFORMATION? LET US KNOW.
+                </p>
+            </div>
+        </section>
+        <section class="feature-box">
+            <div class="box">
+                <form>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Name" required><br>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Email" required><br>
+                    <input type="subject" id="subject" name="Subject" class="form-control" placeholder="Subject" required><br>
+                    <textarea name="message" id="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
+                    <button type="submit" class="btn2" style="margin-left: 35%;" onclick="sendMail()">SEND MESSAGE</button>
+                </form>
+            </div>
+        </section>
         <section class="ending">
             <div style="font-size: 16px; font-weight: 400;">
                 MORRISON LEGAL, LLC

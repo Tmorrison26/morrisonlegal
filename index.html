@@ -11,6 +11,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <!--Swiper Import-->
         <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init({
+                    publicKey: "cqiEJ2nedX1pOfi9i",
+                });
+            })();
+        </script>
     </head>
     <body>
         <!--Navigation Pane-->
@@ -242,7 +253,7 @@
             <section style="font-family: 'Sacramento', sans-serif; color: white; font-size: 60px; font-weight: 300; margin-top: 5%;">
                 Reviews from Clients
             </section>
-            <a href="https://facebook.com/110209167090165/reviews" style="text-decoration: none; color: white;">
+            <a href="https://facebook.com/110209167090165/reviews" target="_blank" style="text-decoration: none; color: white;">
                 <section class="percent">
                     <section class="review_num logo" style="margin-top: 25px;">
                         <img src="images/fb.png" alt="" class="review_num logo">
@@ -258,6 +269,75 @@
                 <div class="slide-container swiper">
                     <div class="slide-content">
                         <div class="card-wrapper swiper-wrapper">
+                            <!--Reduced Comments-->
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <div class="card-image">
+                                        <img src="images/prof1.jpg" alt="" class="card-img">
+                                    </div>
+
+                                    <div class="card-content">
+                                        <h2 class="recommend">
+                                            Recommends
+                                        </h2>
+                                        <p class="description">
+                                            "Morrison Legal was instrumental in insuring my..."
+                                        </p>
+                                        <a href="https://facebook.com/110209167090165/reviews" target="_blank" style="text-decoration: none;" class="review-button">
+                                            Read full review <span class="img_arrow">></span>
+                                        </a>
+                                        <h4 class="name">
+                                            Nilah Simmons - <span class="date">5/30/2024</span>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <div class="card-image">
+                                        <img src="images/prof2.jpg" alt="" class="card-img">
+                                    </div>
+
+                                    <div class="card-content">
+                                        <h2 class="recommend">
+                                            Recommends
+                                        </h2>
+                                        <p class="description">
+                                            "Larry has helped me through one of the hardest..."
+                                        </p>
+                                        <a href="https://facebook.com/110209167090165/reviews" target="_blank" style="text-decoration: none;" class="review-button">
+                                            Read full review <span class="img_arrow">></span>
+                                        </a>
+                                        <h4 class="name">
+                                            Shelley Reeves - <span class="date">2/15/2024</span>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <div class="card-image">
+                                        <img src="images/prof3.jpg" alt="" class="card-img">
+                                    </div>
+
+                                    <div class="card-content">
+                                        <h2 class="recommend">
+                                            Recommends
+                                        </h2>
+                                        <p class="description">
+                                            "Compassionate. Knowledgeable. Client Foc..."
+                                        </p>
+                                        <a href="https://facebook.com/110209167090165/reviews" target="_blank" style="text-decoration: none;" class="review-button">
+                                            Read full review <span class="img_arrow">></span>
+                                        </a>
+                                        <h4 class="name">
+                                            Sarah Bogle Morrison - <span class="date">2/9/2020</span>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Full Comments
                             <div class="card swiper-slide">
                                 <div class="image-content">
                                     <span class="overlay">
@@ -280,6 +360,51 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay">
+
+                                    </span>
+
+                                    <div class="card-image">
+                                        <img src="images/prof2.jpg" alt="" class="card-img">
+                                    </div>
+
+                                    <div class="card-content">
+                                        <h2 class="name">
+                                            Shelly Reeves
+                                        </h2>
+                                        <p class="description">
+                                            Larry has helped me through one of the hardest transitions in life. He is patient, understanding and walked me through every detail step by step. I know I can always rely on him to be here if I need him. I highly recommend his services.
+                                        </p>
+
+                                        <button class="review-button">Read Full Review</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay">
+
+                                    </span>
+
+                                    <div class="card-image">
+                                        <img src="images/prof3.jpg" alt="" class="card-img">
+                                    </div>
+
+                                    <div class="card-content">
+                                        <h2 class="name">
+                                            Sarah Bogle Morrison
+                                        </h2>
+                                        <p class="description">
+                                            Compassionate. Knowledgeable. Client Focused.
+                                        </p>
+
+                                        <button class="review-button">Read Full Review</button>
+                                    </div>
+                                </div>
+                            </div>
+                            -->
                         </div>
                     </div>
 
@@ -310,12 +435,11 @@
         <section class="feature-box">
             <div class="box">
                 <form>
-                    <input type="text" name="name" class="form-control" placeholder="Enter Your Name" required><br>
-                    <input type="email" name="email" class="form-control" placeholder="Enter Your Email" required><br>
-                    <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
-                    <input type="file" id="file" class="form-control file">
-                    <label for="file" class="form-control attach">Attach Files</label><br>
-                    <button type="submit" class="btn2" style="margin-left: 35%;">SEND MESSAGE</button>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Name" required><br>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Email" required><br>
+                    <input type="subject" id="subject" name="Subject" class="form-control" placeholder="Subject" required><br>
+                    <textarea name="message" id="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
+                    <button type="submit" class="btn2" style="margin-left: 35%;" onclick="sendMail()">SEND MESSAGE</button>
                 </form>
             </div>
         </section>
@@ -330,7 +454,7 @@
                 8128309868
             </div>
         </section>
-        
+        <section class="void"></section>
         <!--Footer Section-->
         <footer>
             <section class="socials">
