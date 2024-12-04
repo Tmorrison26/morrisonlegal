@@ -1,32 +1,13 @@
+html {
+    font-size: 15px;
+}
 body {
     background: #f9f9f9;    
     font-family: 'Raleway', sans-serif;
-    font-size: 15px;
+    font-size: 1rem;
     margin: 0;
     padding: 0;
     letter-spacing: .5px;
-}
-
-/* Header Section */
-header {
-    height: 275px;
-    padding: 0;
-}
-.law_logo {
-    background-image: url("images/logo.png");
-    background-size: min(600px, 55%);
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    text-indent: -99999999999999999px;
-    height: 250px;
-}
-.title {
-    height: 50px;
-    text-align: center;
-    margin-top: min(-25px);
-    font-weight: 400;
-    font-size: 25px;
 }
 
 /* Navigation System */
@@ -37,7 +18,7 @@ ul {
     list-style-type: none;
     text-align: center;
     justify-content: center;
-    font-size: 16px;
+    font-size: 1.067rem;
 }
 ul.nav_pane {
     background-color: #000429;
@@ -53,6 +34,100 @@ ul.nav_pane {
 a {
     text-decoration: none;
 }
+/* hambuger menu */
+.off-screen-menu {
+    background-color: #000429;
+    height: 100vh;
+    width: 50%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: .3s ease;
+}
+.off-screen-menu.active {
+    right: 0;
+}
+nav.mobile {
+    padding: 1rem;
+    background-color: #000429;
+}
+ul.ham {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    background-color: #000429;
+}
+li.mobilelist {
+    display: flex;
+    flex-direction: column;
+}
+.ham-menu {
+    height: 50px;
+    width: 100%;
+    max-width: 40px;
+    margin-left: auto;
+    position: relative;
+}
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+.ham-menu.active span {
+    background-color: white;
+}
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* Header Section */
+header {
+    height: 275px;
+    padding: 0;
+}
+.law_logo {
+    background-image: url("images/logo.png");
+    background-size: min(600px, 55%);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: -99999999999999999px;
+    height: 250px;
+}
+.title {
+    height: 50px;
+    text-align: center;
+    margin-top: min(-25px);
+    font-weight: 400;
+    font-size: 1.667rem;
+}
 
 /* Body Section */ 
 .feature-box {
@@ -67,7 +142,7 @@ a {
     border: 1px solid black;
     color: black;
     font-weight: 450;
-    font-size: 15px;
+    font-size: 1rem;
     border-radius: 35px;
     padding: 20px 35px;
     transition: color 0.15s linear;
@@ -95,7 +170,8 @@ a {
 
 .images {
     background-color: #000429;
-    width: 640px;
+    width: 100%;
+    max-width: 640px;
     padding: 8px;
 }
 .special {
@@ -106,7 +182,7 @@ a {
     line-height: 20px;
     height: 75px;
     margin-left: 29%;
-    font-size: 17px;
+    font-size: 1.133rem;
 }
 .feature-box.text {
     flex-direction: column;
@@ -116,8 +192,21 @@ a {
 }
 .feature-box.label {
     padding-top: 40px;
-    font-size: 25px;
+    font-size: 1.667rem;
     font-weight: 300;
+}
+hr.lines{
+    width: var(--x);
+    color: black;
+    margin-top: auto;
+}
+.lines.left {
+    margin-left: 12%;
+    justify-content: left;
+}
+.lines.right {
+    margin-right: 12%;
+    justify-content: right;
 }
 .feature-box.info_ticket {
     margin-left: 36.5%;
@@ -125,7 +214,7 @@ a {
     line-height: 25px;
 }
 h1 {
-    font-size: 17px;
+    font-size: 1.133rem;
     line-height: 35px;
     font-weight: 500;
 }
@@ -150,7 +239,7 @@ h1 {
     display: flex;
     flex-direction: row;
     font-family: 'Raleway', sans-serif;
-    font-size: 22px;
+    font-size: 1.4667rem;
     letter-spacing: 0;
     height: auto;
     justify-content: center;
@@ -214,19 +303,19 @@ h1 {
     border: 4px solid #4070f4;
 }
 .recommend {
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: 500;
     color: black;
 }
 .description {
-    font-size: 18px;
+    font-size: 1.2rem;
     color: black;
     text-align: center;
 }
 .review-button {
     font-family: 'Raleway', sans-serif;
     border: none;
-    font-size: 17px;
+    font-size: 1.133rem;
     color: black;
     padding: 4px 16px;
     border-radius: 6px;
@@ -239,12 +328,12 @@ h1 {
 .img_arrow {
     align-items: center;
     justify-content: center;
-    font-size: 23px;
+    font-size: 1.533rem;
     font-weight: 300;
 }
 .name {
     font-weight: 525;
-    font-size: 15px;
+    font-size: 1rem;
 }
 .date {
     font-weight: 400;
@@ -304,7 +393,7 @@ form {
     outline: none;
     border-bottom: 1px solid gray;
     color: black;
-    font-size: 18px;
+    font-size: 1.2rem;
     margin-bottom: 16px;
 }
 input {
@@ -351,7 +440,7 @@ footer {
 }
 .copyright {
     color: rgb(59, 59, 59);
-    font-size: 15px;
+    font-size: 1rem;
     text-align: center;
     margin: 0 auto;
     width: min(1200px, 72%);
@@ -362,4 +451,26 @@ footer {
 .void {
     height: 300px;
     border-bottom: 2px solid rgb(228, 228, 228);
+}
+
+/* Responsive Rules */
+.mobile {
+    display: none;
+}
+@media screen and (max-width: 1536px) {
+    html {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1280px) {
+
+}
+@media screen and (max-width: 1024px) {
+    nav.desktop {
+        display: none;
+    }
+    nav.mobile {
+        display: flex;
+        justify-content: center;
+    }
 }

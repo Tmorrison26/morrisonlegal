@@ -25,13 +25,28 @@
     </head>
     <body>
         <!--Navigation Pane-->
-        <nav>
+        <nav class="desktop">
             <ul class="nav_pane">
                 <li class="nav-system"><a href="index.html" style="color: white; font-weight: 700;">HOME</a></li>
                 <li class="nav-system"><a href="general.html" style="color: white;">LAW FIRM</a></li>
                 <li class="nav-system"><a href="estate.html" style="color: white;">ESTATE PLANNING</a></li>
                 <li class="nav-system"><a href="probate.html" style="color: white;">PROBATE</a></li>
             </ul>
+        </nav>
+        <nav class="mobile">
+            <div class="off-screen-menu">
+                <ul class="ham">
+                    <li class="mobilelist"><a href="index.html" style="color: white; font-weight: 700;">HOME</a></li>
+                    <li class="mobilelist"><a href="general.html" style="color: white;">LAW FIRM</a></li>
+                    <li class="mobilelist"><a href="estate.html" style="color: white;">ESTATE PLANNING</a></li>
+                    <li class="mobilelist"><a href="probate.html" style="color: white;">PROBATE</a></li>
+                </ul>
+            </div>
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
         
         <!--Logo and description header-->
@@ -69,9 +84,9 @@
 
         <!--Expert Legal Services-->
         <section class="feature-box label">
-            <hr width="27%" size="1" color="black" style="margin-left: 12%; justify-content: left; height: 2%; margin-top: auto;">
+            <hr class="lines left" style="--x: 27%" size="1" color="black">
             Expert Legal Services
-            <hr width="27%" size="1" color="black" style="margin-right: 12%; justify-content: right; height: 2%; margin-top: auto;">
+            <hr class="lines right" style="--x: 27%" size="1" color="black">
         </section>
         <section class="feature-box info_ticket">
             <div>
@@ -123,9 +138,9 @@
 
         <!--Why Choose Morrison Legal?-->
         <section class="feature-box label">
-            <hr width="24%" size="1" color="black" style="margin-left: 12%; justify-content: left; height: 2%; margin-top: auto;">
+            <hr class="lines left" style="--x: 24%" size="1" color="black">
             Why Choose Morrison Legal?
-            <hr width="24%" size="1" color="black" style="margin-right: 12%; justify-content: right; height: 2%; margin-top: auto;">
+            <hr class="lines right" style="--x: 24%" size="1" color="black">
         </section>
         <section class="feature-box info_ticket" style="padding-top: 25px; margin-left: 35.5%;">
             <div>
@@ -217,9 +232,9 @@
 
         <!--Meet Our Attorney-->
         <section class="feature-box label">
-            <hr width="30%" size="1" color="black" style="margin-left: 12%; justify-content: left; height: 2%; margin-top: auto;">
+            <hr class="lines left" style="--x: 30%" size="1" color="black">
             Meet Our Attorney
-            <hr width="30%" size="1" color="black" style="margin-right: 12%; justify-content: right; height: 2%; margin-top: auto;">
+            <hr class="lines right" style="--x: 30%" size="1" color="black">
         </section>
         <section class="feature-box info_ticket" style="padding-top: 25px; margin-left: 35.5%;">
             <div>
@@ -418,12 +433,13 @@
         <!-- JS -->
         <script src="swiper/swiper-bundle.min.js"></script>
         <script src="java/script.js"></script>
-        
+        <script src="java/ham.js"></script>
+
         <!--Contact Section-->
         <section class="feature-box label" style="font-size: 30px;">
-            <hr width="30%" size="1" color="black" style="margin-left: 12%; justify-content: left; height: 2%; margin-top: auto;">
+            <hr class="lines left" style="--x: 30%" size="1" color="black">
             Contact Us
-            <hr width="30%" size="1" color="black" style="margin-right: 12%; justify-content: right; height: 2%; margin-top: auto;">
+            <hr class="lines right" style="--x: 30%" size="1" color="black">
         </section>
         <section class="feature-box">
             <div style="text-align: center; line-height: 25px; font-weight: 300; font-size: 17px;">
