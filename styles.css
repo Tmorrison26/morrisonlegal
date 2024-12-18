@@ -174,6 +174,24 @@ header {
     max-width: 640px;
     padding: 8px;
 }
+.images.est_fig, .images.prob_fig, .images.inj_fig, .images.real_fig {
+    width: 60vh;
+    margin-left: -8%;
+}
+.meet_fig, .prof_fig {
+    width: 80vh;
+    margin-left: 0;
+}
+.off_fig {
+    width: 78vh; margin-left: 8%;
+}
+.images.mon_house {
+    width: 85vh; margin-left: 0;
+}
+.images.sched_msg {
+    width: 82.5vh; margin-left: 7.5%;
+}
+
 .special {
     display: flex;
     flex-direction: column;
@@ -195,6 +213,9 @@ header {
     font-size: 1.667rem;
     font-weight: 300;
 }
+.feature-box.label.con_us {
+    font-size: 2rem;
+}
 hr.lines{
     width: var(--x);
     color: black;
@@ -213,10 +234,47 @@ hr.lines{
     width: 60vh;
     line-height: 25px;
 }
+
+.att_div {
+    margin-top: 25%;
+}
+.client_div {
+    margin-top: 60%;
+}
+.rts_div, .call_div {
+    margin-top: 20%;
+}
+.hrs_div{
+    margin-top: 15%;
+}
+.msg_div {
+    margin-top: 40%;
+}
+.Larry_div {
+    margin-top: 10%;
+}
 h1 {
     font-size: 1.133rem;
     line-height: 35px;
     font-weight: 500;
+}
+.para_desc {
+    width: 80vh;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.desc_2 {
+    width: 85vh;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+hr.els_space {
+    height: var(--y);
+    margin: 15px;
+    padding: 5px;
+}
+.p_els {
+    width: 65vh;
 }
 
 /* Reviews Section */
@@ -233,6 +291,13 @@ h1 {
     position: relative;
     height: 750px;
     text-align: center;
+}
+.review_title {
+    font-family: 'Sacramento', sans-serif;
+    color: white;
+    font-size: 60px;
+    font-weight: 300;
+    margin-top: 5%;
 }
 .percent {
     margin-top: 45px;
@@ -255,7 +320,7 @@ h1 {
 }
     /*Swiper Functions*/
 .container {
-    height: auto;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -308,6 +373,7 @@ h1 {
     color: black;
 }
 .description {
+    width: 75%;
     font-size: 1.2rem;
     color: black;
     text-align: center;
@@ -447,7 +513,6 @@ footer {
     line-height: 22px;
     padding-bottom: 20px;
 }
-
 .void {
     height: 300px;
     border-bottom: 2px solid rgb(228, 228, 228);
@@ -457,13 +522,181 @@ footer {
 .mobile {
     display: none;
 }
+.container.brief {
+    display: none;
+}
+.mobile_display {
+    display: none;
+}
 @media screen and (max-width: 1536px) {
     html {
         font-size: 14px;
     }
 }
-@media screen and (max-width: 1280px) {
-
+@media screen and (max-width: 1345px) {
+    /*Index*/
+    .meet_fig, .prof_fig {
+        width: 70vh;
+    }
+    .off_fig {
+        width: 68vh;
+    }
+    .images.mon_house {
+        width: 75vh;
+    }
+    .images.sched_msg {
+        width: 72.5vh;
+    }
+    .para_desc {
+        width: 70vh;
+    }
+    .desc_2 {
+        width: 75vh;
+    }
+    .att_div {
+        margin-top: 20%;
+    }
+    .client_div {
+        margin-top: 55%;
+    }
+    .rts_div {
+        margin-top: 15%;
+    }
+    .call_div {
+        margin-top: 25%;
+    }
+    .hrs_div{
+        margin-top: 5%;
+    }
+    .msg_div {
+        margin-top: 35%;
+    }
+    .Larry_div {
+        margin-top: 0;
+    }
+    .prof_fig {
+        margin-top: 13.5%;
+    }
+}
+@media screen and (max-width: 1235px) {
+    .meet_fig, .prof_fig {
+        width: 65vh;
+        margin-left: -8.5%;
+    }
+    .off_fig {
+        width: 63vh;
+    }
+    .images.mon_house {
+        width: 70vh;
+    }
+    .images.sched_msg {
+        width: 67.5vh;
+    }
+    .para_desc {
+        width: 65vh;
+    }
+    .desc_2 {
+        width: 70vh;
+    } 
+}
+@media screen and (max-width: 1180px) {
+    .meet_fig, .prof_fig {
+        width: 60vh;
+        margin-left: -15%;
+    }
+    .off_fig {
+        width: 58vh;
+        margin-left: 25%;
+    }
+    .images.mon_house {
+        width: 60vh;
+        margin-left: -15%;
+    }
+    .images.sched_msg {
+        width: 62.5vh;
+    }
+    .para_desc {
+        width: 55vh;
+    }
+    .desc_2 {
+        width: 55vh;
+    }
+    .images.est_fig, .images.prob_fig, .images.inj_fig, .images.real_fig {
+        width: 50vh;
+        margin-left: -15%;
+    }
+    .p_els, .h_els {
+        width: 55vh;
+        margin-left: -4%;
+    }
+    .att_div {
+        margin-top: 15%;
+        margin-right: -15%;
+    }
+    .client_div {
+        margin-left: -25%;
+        margin-top: 30%;
+    }
+    .hrs_div, .msg_div {
+        margin-left: -12.5%;
+    }
+    .hrs_div {
+        margin-top: -5%;
+    }
+    .msg_div {
+        margin-top: 25%;
+    }
+    .call_div {
+        margin-top: 10%;
+    }
+    .rts_div {
+        margin-top: 3%;
+    }
+}
+@media screen and (max-width: 1127px) {
+    .feature-box.label {
+        font-size: 1.5rem;
+    }
+    h1 {
+       font-size: 1rem; 
+    }
+}
+@media screen and (max-width: 1100px) {
+    html {
+        font-size: 13px;
+        font-weight: 300;
+    }
+}
+@media screen and (max-width: 1041px) {
+    .meet_fig, .prof_fig {
+        width: 55vh;
+        margin-left: -15%;
+    }
+    .off_fig {
+        width: 53vh;
+        margin-left: 25%;
+    }
+    .images.mon_house {
+        width: 55vh;
+        margin-left: -15%;
+    }
+    .images.sched_msg {
+        width: 57.5vh;
+    }
+    .para_desc {
+        width: 50vh;
+    }
+    .desc_2 {
+        width: 50vh;
+    }
+    .images.est_fig, .images.prob_fig, .images.inj_fig, .images.real_fig {
+        width: 45vh;
+        margin-left: -15%;
+    }
+    .p_els, .h_els {
+        width: 50vh;
+        margin-left: -4%;
+    }  
 }
 @media screen and (max-width: 1024px) {
     nav.desktop {
@@ -472,5 +705,232 @@ footer {
     nav.mobile {
         display: flex;
         justify-content: center;
+    }
+}
+@media screen and (max-width: 1014px) {
+    .feature-box.label.wcml {
+        letter-spacing: -.5px;
+    }
+}
+@media screen and (max-width: 988px) {
+    .meet_fig, .prof_fig {
+        width: 50vh;
+        margin-left: -25%;
+    }
+    .off_fig {
+        width: 48vh;
+        margin-left: 15%;
+    }
+    .images.mon_house {
+        width: 50vh;
+        margin-left: -25%;
+    }
+    .images.sched_msg {
+        width: 52.5vh;
+    }
+    .para_desc {
+        margin-left: -10%;
+    }
+    .desc_2 {
+        margin-left: -15%;
+    }
+    .h_wcml1 {
+        margin-left: -10%;
+    }
+    .h_wcml2 {
+        margin-left: -15%;
+    }
+    .feature-box.reviews {
+        height: 600px;
+    }
+    .percent {
+        display: none;
+    }
+    .container {
+        padding-top: 20px;
+    }
+    .copyright {
+        width: 70%;
+    }
+    .feature-box.label.els {
+        letter-spacing: -.5px;
+    }
+    hr.els_space {
+        margin: 5px;
+    }
+    .h_els, .p_els {
+        margin-left: -8%;
+    }
+    .images.est_fig, .images.inj_fig, .images.prob_fig, .images.real_fig {
+        margin-left: -22%;
+    }
+}
+
+@media screen and (max-width: 973px) {
+    hr.els_space {
+        size: 10;
+    }
+    .images.est_fig, .images.inj_fig, .images.prob_fig, .images.real_fig {
+        width: 120%;
+        margin-left: -42%;
+    }
+    .h_els, .p_els {
+        width: 50vh;
+        margin-left: -20%;
+    }
+    hr.els_space {
+        margin: 0px;
+        padding: 25px;
+        size: 15;
+    }
+    html {
+        font-size: 12px;
+    }
+    .off_fig {
+        margin-left: 12%;
+    }
+    .images.sched_msg {
+        margin-left: -5%;
+    }
+}
+
+@media screen and (max-width: 932px) {
+    .feature-box.reviews {
+        height: 500px;
+    }
+    .meet_fig {
+        margin-left: 5%;
+    }
+    .off_fig {
+        width: 40vh;
+        margin-left: 25%;
+    }
+    .images.mon_house {
+        margin-left: 5%;
+    }
+    .images.sched_msg {
+        width: 45vh;
+        margin-left: 15%;
+    }
+    .desc_2.left, .h_wcml2 {
+        margin-left: 5%;
+    }
+    .para_desc.left, .h_wcml1.left {
+        margin-left: 5%;
+    }
+    .para_desc, .h_wcml1 {
+        margin-left: 7.5%;
+    }
+    .para_desc.right, .h_wcml1.right {
+        margin-left: 20%;
+    }
+    .prof_fig {
+        margin-left: -25%;
+        margin-top: 50%;
+    }
+    .Larry_div {
+        margin-left: -12%;
+    }
+    .container.long {
+        display: none;
+    }
+    .container.brief {
+        display: flex;
+        flex-direction: row;
+    }
+    html {
+        letter-spacing: -.5px;
+    }
+    .feature-box.info_ticket.wcml {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 896px) {
+    hr.els_space {
+        padding: 8px;
+    }
+    .feature-box.info_ticket.moa {
+        width: 25%;
+    }
+    .prof_fig {
+        margin-left: 7%;
+    }
+    .Larry_div {
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 865px) {
+    .desk_display {
+        display: none;
+    }
+    .mobile_display {
+        display: inline-block;
+    }
+    .feature-box.info_ticket {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+    }
+    html {
+        font-size: 14px;
+        max-width: 865px;
+    }
+    .lines.left {
+        margin-left: 5%;
+    }
+    .lines.right {
+        margin-right: 5%
+    }
+    .feature-box.label.els {
+        text-align: center;
+    }
+    .feature-box.info_ticket.els {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15%;
+    }
+    .images.est_fig, .images.prob_fig, .images.inj_fig, .images.real_fig {
+        width: 672px;
+        margin-left: 15%;
+        justify-content: center;
+        align-items: center;
+    }
+    .h_els, .p_els {
+        margin-left: 18.5%;
+        width: 672px
+    }
+    .meet_fig {
+        margin-left: 5%;
+    }
+    .off_fig {
+        width: 40vh;
+        margin-left: 25%;
+    }
+    .images.mon_house {
+        margin-left: 5%;
+    }
+    .images.sched_msg {
+        width: 45vh;
+        margin-left: 15%;
+    }
+    .desc_2.left, .h_wcml2 {
+        margin-left: 5%;
+    }
+    .para_desc.left, .h_wcml1.left {
+        margin-left: 5%;
+    }
+    .para_desc, .h_wcml1 {
+        margin-left: 7.5%;
+    }
+    .para_desc.right, .h_wcml1.right {
+        margin-left: 20%;
+    }
+    .feature-box.info_ticket.moa, .feature-box.label.moa, .feature-box.info_ticket.wcml, .feature-box.label.wcml {
+        display: none;
+    }
+    .feature-box.reviews {
+        width: 865px;
     }
 }
